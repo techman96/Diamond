@@ -1,0 +1,146 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: floralwhite;
+  font-family: 'Satisfy', cursive;
+}
+
+
+.header{
+  display: grid;
+  grid-template-columns: repeat(12,150px);
+  grid-template-rows: 50px 100px 50px;
+  background-color: floralwhite;
+}
+.header h1{
+font-size: 4em;
+grid-column: 5/ span 3;
+animation-name: head;
+animation-duration: 4s;
+animation-iteration-count: 1;
+}
+@keyframes head{
+  from{opacity: 0%; color: orange;}
+  to{opacity: 100%; color: black;}
+}
+
+.header>div{
+  grid-column: 3/ span 2;
+
+}
+.header-image img{
+  width: 15vw;
+  height: 15vh;
+}
+
+.container{
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.nav{
+  margin: 0 auto;
+}
+.nav ul{
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  background-color: rgb(231, 217, 192);
+  border-radius: 10px;
+  font-size: 1.7em;
+  font-weight: bold;
+}
+.nav ul a{
+  margin: 0.5em 1em;
+  text-decoration: none;
+  color: orangered;
+}
+.nav ul a:hover{
+  color: black;
+}
+
+main{
+  margin: 1em auto;
+  border-radius: 15px;
+}
+
+main .banner{
+  background-image: url("image/dim1.jpg");
+  background-color: bisque;
+  height: 35vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 15px;
+  color: black;
+  box-shadow: 0 0 10px silver;
+}
+.banner h2{
+padding: 25px;
+font-size: 2.2em;
+}
+
+.banner p{
+  padding: 10px 20px;
+  width: 40%;
+  font-size: 1.1em;
+}
+
+main .articles{
+  display: flex;
+  margin: 15px;
+  justify-content: center;
+}
+
+.post{
+  width:20vw;
+  height: 60vh;
+  margin: 20px;
+  padding: 10px;
+  background-color: rgb(240, 229, 210);
+  border-radius: 15px;
+  text-align: center;
+}
+.post h4{
+  font-size: 2em;
+  font-weight: bold;
+}
+.post img{
+  width: 17vw;
+  height: 28vh;
+  margin: 10px;
+  border-radius: 10px;
+}
+.post p{
+  padding-bottom: 20px;
+  font-size: 1.1em;
+}
+.post a{
+  text-align: left;
+  color: brown;
+  text-decoration: underline;
+}
+
+.footer{
+  display: flex;
+  justify-content: space-between;
+  height: 20vh;
+  align-items: center;
+}
+.footer .left-side{
+  width: 50%;
+}
+.footer img{
+  width: 10vw;
+  height: 10vh;
+  margin: auto 10px;
+}
+.footer .right-side{
+  border-top: 2px solid black;
+  width: 50%;
+
+}
+
